@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Meus Simulados')
+
 @section('content')
 <div class="container">
 	<div class="columns">

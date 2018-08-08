@@ -8,7 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>
+    	@hasSection('title')
+    		@yield('title') -
+    	@endif
+    	{{ config('app.name', 'Agora Estude') }}
+    </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -39,6 +44,12 @@
 					<div class="navbar-start">
 						<!-- navbar items -->
 						<a class="navbar-item" href="https://agoraestude.com.br/">Site Principal</a>
+						@auth
+							<a class="navbar-item" href="{{ route('home') }}">Meus Simulados</a>
+							@if(Auth::user()->admin)
+								<a class="navbar-item" href="{{ route('painel-admin') }}">Painel Admin</a>
+							@endif
+						@endauth
 					</div>
 
 					<div class="navbar-end">

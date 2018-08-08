@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
+	Route::get('/home', 'AdminController@index')->name('painel-admin');
+	Route::get('/cursos/{id}', 'AdminController@curso')->name('cursos-admin');
+});
+
+Route::get('/cursos', 'CursoController@index');
+Route::get('/cursos/{id}', 'CursoController@show');
+Route::get('/cursos/{id}/simulados', 'CursoController@showSimulados');
