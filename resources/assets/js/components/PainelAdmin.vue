@@ -6,7 +6,7 @@
     				<a :href="'/admin/cursos/' + curso.id">
     					<div class="card-image">
     						<figure class="image is-4by3">
-    							<img src="http://www.cmrj.eb.mil.br/images/ca/historico/9simbolo.jpg" alt="Placeholder image">
+    							<img src="/storage/ae-4by3.png" alt="Placeholder image">
     						</figure>
     					</div>
     					<div class="card-content">

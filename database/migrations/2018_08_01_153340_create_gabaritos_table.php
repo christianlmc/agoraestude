@@ -14,9 +14,8 @@ class CreateGabaritosTable extends Migration
     public function up()
     {
         Schema::create('gabaritos', function (Blueprint $table) {
-            $table->integer('simulado_id')->unsigned()->unique();
+            $table->integer('simulado_id')->unsigned()->unique()->primary();
             $table->foreign('simulado_id')->references('id')->on('simulados');
-            $table->string('nome');
             $table->date('data_disponivel');
             $table->timestamps();
         });

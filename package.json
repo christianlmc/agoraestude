@@ -20,6 +20,10 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "bulma": "^0.7.1"
+        "@fortawesome/fontawesome-free": "^5.2.0",
+        "bulma": "^0.7.1",
+        "bulma-extensions": "^2.2.1",
+        "moment": "^2.22.2",
+        "vuejs-datepicker": "^1.5.2"
     }
 }

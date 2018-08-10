@@ -26,4 +26,9 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function 
 
 Route::get('/cursos', 'CursoController@index');
 Route::get('/cursos/{id}', 'CursoController@show');
-Route::get('/cursos/{id}/simulados', 'CursoController@showSimulados');
+Route::get('/cursos/{id}/simulados/gabaritos', 'CursoController@showSimuladosGabarito');
+
+Route::post('/simulados', 'SimuladoController@store');
+Route::delete('/simulados/{id}', 'SimuladoController@destroy');
+
+Route::get('/arquivos/{tipo}/{id}', 'ArquivoController@show');

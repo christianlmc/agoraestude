@@ -11,7 +11,7 @@
 		            <p class="card-header-title title is-4">Editar {{ $curso->nome }}</p>
 		        </header>
 		        <div class="card-content">
-		        	<editar-curso curso-id="{{ $curso->id }}"></editar-curso>
+		        	<editar-curso curso-id="{{ $curso->id }}" curso-nome="{{ $curso->nome }}"></editar-curso>
 		        </div>
 		    </div>
 		</div>

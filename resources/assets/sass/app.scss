@@ -11,8 +11,16 @@
 //Bulma
 @import '~bulma/bulma';
 
+//Bulma Extensions
+@import '~bulma-extensions/bulma-divider/src/sass/index';
+
 //Materialize
 //@import '~materialize-css/sass/materialize';
+
+//Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
 
 .navbar-laravel {
   background-color: #fff;

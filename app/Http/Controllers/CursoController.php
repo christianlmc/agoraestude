@@ -14,9 +14,11 @@ class CursoController extends Controller
         return $cursos;
     }
 
-    public function showSimulados($id)
+    public function showSimuladosGabarito($id)
     {
-    	$simulados = Curso::find($id)->simulados()->get();
+    	$simulados = Curso::find($id)->simulados()->with('gabarito')->get();
+    	// $simulados->gabarito;
+
     	return $simulados;
     }
 }
