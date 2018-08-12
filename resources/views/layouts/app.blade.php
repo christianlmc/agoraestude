@@ -10,7 +10,7 @@
 
     <title>
     	@hasSection('title')
-    		@yield('title') -
+    		@yield('title') |
     	@endif
     	{{ config('app.name', 'Agora Estude') }}
     </title>

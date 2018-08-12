@@ -18,6 +18,8 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('painel-admin', require('./components/PainelAdmin.vue'));
 Vue.component('editar-curso', require('./components/EditarCurso.vue'));
+Vue.component('meus-cursos', require('./components/MeusCursos.vue'));
+Vue.component('simulados', require('./components/Simulados.vue'));
 
 const app = new Vue({
     el: '#app'

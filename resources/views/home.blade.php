@@ -11,73 +11,7 @@
 		            <p class="card-header-title title is-4">Olá, {{Auth::user()->nome}}</p>
 		        </header>
 		        <div class="card-content">
-					<div class="columns is-multiline">
-						<div class="column is-4">
-							<div class="hvr-grow-shadow">
-								<div class="card">
-									<a>
-										<div class="card-image">
-											<figure class="image is-4by3">
-												<img src="/storage/ae-4by3.png" alt="Placeholder image">
-											</figure>
-										</div>
-										<div class="card-content">
-											<p class="title is-6">Simulados Colégio Militar – 6o Ano (Matematica)</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="column is-4">
-							<div class="hvr-grow-shadow">
-								<div class="card">
-									<a>
-										<div class="card-image">
-											<figure class="image is-4by3">
-												<img src="/storage/ae-4by3.png" alt="Placeholder image">
-											</figure>
-										</div>
-										<div class="card-content">
-											<p class="title is-6">Simulados Colégio Militar – 1o Ano (Matematica)</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="column is-4">
-							<div class="hvr-grow-shadow">
-								<div class="card">
-									<a>
-										<div class="card-image">
-											<figure class="image is-4by3">
-												<img src="/storage/ae-4by3.png" alt="Placeholder image">
-											</figure>
-										</div>
-										<div class="card-content">
-											<p class="title is-6">Simulados Colégio Militar – 6o Ano (Portugues)</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="column is-4">
-							<div class="hvr-grow-shadow">
-								<div class="card">
-									<a>
-										<div class="card-image">
-											<figure class="image is-4by3">
-												<img src="/storage/ae-4by3.png" alt="Placeholder image">
-											</figure>
-										</div>
-										<div class="card-content">
-											<p class="title is-6">Simulados Colégio Militar – 1o Ano (Portugues)</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
+					<meus-cursos></meus-cursos>
 		        </div>
 		    </div>
 		</div>

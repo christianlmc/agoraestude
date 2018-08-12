@@ -2,7 +2,7 @@
     <div class="columns is-multiline">
     	<div class="column is-4" v-for="curso in cursos">
     		<div class="hvr-grow-shadow">
-    			<div class="card">
+    			<div class="card"">
     				<a :href="'/admin/cursos/' + curso.id">
     					<div class="card-image">
     						<figure class="image is-4by3">
@@ -23,7 +23,7 @@
     export default {
         mounted() {
         	var self = this
-            axios.get('/cursos')
+            axios.get('/api/cursos')
             .then(function (response) {
                 self.cursos = response.data
             })
@@ -33,7 +33,7 @@
         },
         data: function () {
         	return {
-        		cursos: null
+        		cursos: []
         	}
         },
 

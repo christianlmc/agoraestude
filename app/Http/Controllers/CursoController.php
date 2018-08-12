@@ -5,12 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Curso;
+use Auth;
 
 class CursoController extends Controller
 {
     public function index()
     {
-    	$cursos = Curso::all();
+    	if (Auth::user()->admin) {
+    		$cursos = Curso::all();
+    	}
+    	else{
+    		$cursos = Auth::user()->cursos;
+    	}
+
         return $cursos;
     }
 

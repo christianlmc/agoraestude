@@ -150,7 +150,7 @@
         mounted() {
         	var self = this
 
-            axios.get('/cursos/' + this.cursoId + '/simulados/gabaritos')
+            axios.get('/api/cursos/' + this.cursoId + '/simulados/gabaritos')
             .then(function (response) {
                 self.simulados = response.data
             })
@@ -203,7 +203,7 @@
 
 	        	var self = this
 
-	        	axios.post('/simulados', formData)
+	        	axios.post('/api/simulados', formData)
 	        	.then(function (response) {
 	        		self.simulados.push(response.data)
 	        		console.log(response.data)
@@ -215,7 +215,7 @@
 	        deleteSimulado(id, index){
 	        	var self = this
 
-	        	axios.delete('/simulados/' + id)
+	        	axios.delete('/api/simulados/' + id)
 	        	.then(function (response) {
 	        		// console.log(response.data)
 	        		self.simulados.splice(index, 1);
