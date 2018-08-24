@@ -116,11 +116,11 @@
 						<th>{{index+1}}</th>
 						<td>{{simulado.nome}}</td>
 						<td>
-							<a :href="'/arquivos/simulados/' + simulado.id" target="_blank">Simulado</a>
+							<a :href="'/arquivos/simulados/' + simulado.id">Simulado</a>
 						</td>
 						<td>{{simulado.data_disponivel}}</td>
 						<td>
-							<a :href="'/arquivos/gabaritos/' + simulado.id" target="_blank">Gabarito</a>
+							<a :href="'/arquivos/gabaritos/' + simulado.id">Gabarito</a>
 						</td>
 						<td>{{simulado.gabarito.data_disponivel}}</td>
 						<td>
